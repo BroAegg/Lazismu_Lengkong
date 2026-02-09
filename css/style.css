@@ -649,6 +649,7 @@ select {
     left: 0;
     right: 0;
     line-height: 0;
+    z-index: 3;
 }
 
 .hero-wave svg {
