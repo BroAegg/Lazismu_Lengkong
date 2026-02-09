@@ -1,0 +1,1 @@
+Ubah Zakat, infak, dan Sedekah Anda menjadi bantuan pangan bagi warga dhuafa, beasiswa sekolah Muhammadiyah, serta biaya hidup adik-adik di Panti Taman Harapan Panti tertua di Jawa Barat. Yuk, cek seberapa besar skor dampak kebaikan Anda bagi warga Lengkong & Bandung hanya dalam 60 detik!
