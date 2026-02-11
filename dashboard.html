@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Lazismu Lengkong</title>
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { DEFAULT: '#F7941D', light: '#FFB347', dark: '#E67E22' },
+                        dark: { DEFAULT: '#1A1A2E', light: '#2D2D44' },
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'card': '0 4px 20px rgba(0, 0, 0, 0.05)',
+                        'nav': '0 -4px 20px rgba(0,0,0,0.05)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans pb-24 lg:pb-0 antialiased">
+
+    <!-- Desktop Navbar -->
+    <nav class="hidden lg:block fixed top-0 left-0 right-0 bg-white shadow-sm z-50 py-4">
+        <div class="container mx-auto px-5 flex items-center justify-between max-w-[1200px]">
+            <a href="index.html" class="flex flex-col items-center gap-1 group relative">
+                <img src="assets/images/lazismuasli.png" alt="Lazismu Logo" class="h-10 w-auto">
+                <span class="text-[0.625rem] font-normal tracking-wide text-gray-500 logo-text-sub"
+                    style="font-family: 'Lato', sans-serif;">lengkong</span>
+            </a>
+
+            <ul class="flex items-center gap-8">
+                <li><a href="index.html"
+                        class="text-sm font-medium text-gray-600 hover:text-primary transition-colors">Beranda</a></li>
+                <li><a href="program.html"
+                        class="text-sm font-medium text-gray-600 hover:text-primary transition-colors">Program</a></li>
+                <li><a href="kalkulator.html"
+                        class="text-sm font-medium text-gray-600 hover:text-primary transition-colors">Kalkulator</a>
+                </li>
+
+                <!-- Logged In User Dropdown trigger (Static for now) -->
+                <li>
+                    <div
+                        class="flex items-center gap-3 cursor-pointer hover:bg-gray-50 px-3 py-1.5 rounded-lg transition-colors">
+                        <div
+                            class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-xs">
+                            AD</div>
+                        <span class="text-sm font-bold text-[#1A1A2E]">Ahmad Dahlan</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Header / Profile Card -->
+    <header class="bg-[#1A1A2E] text-white pt-8 pb-16 px-6 rounded-b-[2rem] relative shadow-lg lg:hidden">
+        <div class="flex items-center justify-between mb-6">
+            <h1 class="text-lg font-bold">Akun Saya</h1>
+            <button
+                class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+                <i class="fas fa-bell text-sm"></i>
+            </button>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <div class="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-orange-600 p-0.5">
+                <img src="https://ui-avatars.com/api/?name=Ahmad+Dahlan&background=random&color=fff" alt="User"
+                    class="w-full h-full rounded-full border-2 border-[#1A1A2E]">
+            </div>
+            <div>
+                <h2 class="text-xl font-bold">Ahmad Dahlan</h2>
+                <span
+                    class="inline-block px-2.5 py-0.5 bg-orange-500/20 border border-orange-500/30 text-orange-300 rounded-full text-[10px] font-bold tracking-wider uppercase">Donatur
+                    Tetap</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="px-6 lg:px-5 -mt-8 lg:mt-0 max-w-md lg:max-w-[1200px] mx-auto w-full relative z-10 lg:pt-32 lg:pb-12">
+
+        <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+            <!-- Sidebar (Desktop Only) -->
+            <div class="hidden lg:block lg:col-span-3">
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sticky top-32">
+                    <div class="flex flex-col items-center mb-6">
+                        <div class="w-20 h-20 rounded-full bg-gray-100 mb-3 overflow-hidden">
+                            <img src="https://ui-avatars.com/api/?name=Ahmad+Dahlan&background=random&color=fff"
+                                alt="User" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="font-bold text-lg text-[#1A1A2E]">Ahmad Dahlan</h3>
+                        <p class="text-xs text-gray-500 mb-2">ahmad.dahlan@muhammadiyah.id</p>
+                        <span
+                            class="px-3 py-1 bg-orange-100 text-orange-600 text-xs font-bold rounded-full">Member</span>
+                    </div>
+
+                    <nav class="space-y-1">
+                        <a href="#"
+                            class="flex items-center gap-3 px-4 py-3 bg-orange-50 text-primary rounded-xl font-medium">
+                            <i class="fas fa-th-large w-5"></i> Dashboard
+                        </a>
+                        <a href="#"
+                            class="flex items-center gap-3 px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-xl transition-colors">
+                            <i class="fas fa-history w-5"></i> Riwayat Donasi
+                        </a>
+                        <a href="#"
+                            class="flex items-center gap-3 px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-xl transition-colors">
+                            <i class="fas fa-cog w-5"></i> Pengaturan
+                        </a>
+                        <div class="pt-4 mt-4 border-t border-gray-100">
+                            <a href="akun.html"
+                                class="flex items-center gap-3 px-4 py-3 text-red-500 hover:bg-red-50 rounded-xl transition-colors">
+                                <i class="fas fa-sign-out-alt w-5"></i> Keluar
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Content Area (Spans full on mobile, 9 cols on desktop) -->
+            <div class="lg:col-span-9">
+                <!-- Stats Card -->
+                <div
+                    class="bg-white rounded-2xl p-6 shadow-card mb-6 flex lg:grid lg:grid-cols-3 justify-between items-center text-center lg:text-left divide-x lg:divide-x-0 divide-gray-100 lg:gap-6 border border-gray-100 lg:mb-8">
+                    <div
+                        class="flex-1 px-2 lg:px-0 lg:flex lg:items-center lg:gap-4 lg:bg-orange-50 lg:p-6 lg:rounded-xl">
+                        <div
+                            class="hidden lg:flex w-12 h-12 bg-white rounded-full items-center justify-center text-primary shadow-sm">
+                            <i class="fas fa-wallet text-xl"></i></div>
+                        <div>
+                            <span class="block text-xs text-gray-400 mb-1">Total Donasi</span>
+                            <span class="block text-primary font-bold text-lg lg:text-2xl">Rp 1.5jt</span>
+                        </div>
+                    </div>
+                    <div
+                        class="flex-1 px-2 lg:px-0 lg:flex lg:items-center lg:gap-4 lg:bg-blue-50 lg:p-6 lg:rounded-xl">
+                        <div
+                            class="hidden lg:flex w-12 h-12 bg-white rounded-full items-center justify-center text-blue-500 shadow-sm">
+                            <i class="fas fa-hand-holding-heart text-xl"></i></div>
+                        <div>
+                            <span class="block text-xs text-gray-400 mb-1">Program Diikuti</span>
+                            <span class="block text-dark font-bold text-lg lg:text-2xl">12</span>
+                        </div>
+                    </div>
+                    <div class="hidden lg:flex flex-1 items-center gap-4 bg-purple-50 p-6 rounded-xl">
+                        <div
+                            class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-purple-500 shadow-sm">
+                            <i class="fas fa-star text-xl"></i></div>
+                        <div>
+                            <span class="block text-xs text-gray-400 mb-1">Poin Kebaikan</span>
+                            <span class="block text-dark font-bold text-2xl">450</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity (Mobile View matches, Desktop Expanded) -->
+                <div class="bg-white rounded-2xl shadow-card overflow-hidden border border-gray-100 mb-6">
+                    <div class="p-4 border-b border-gray-50 flex justify-between items-center">
+                        <div class="text-xs font-bold text-gray-400 uppercase tracking-wider">Aktivitas Terakhir</div>
+                        <a href="#" class="text-xs text-primary font-bold hover:underline">Lihat Semua</a>
+                    </div>
+
+                    <!-- Item 1 -->
+                    <div class="p-4 border-b border-gray-50 hover:bg-gray-50 transition-colors flex items-center gap-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-green-100 text-green-600 flex items-center justify-center shrink-0">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="flex-grow">
+                            <h4 class="text-sm font-bold text-gray-800">Sedekah Jumat Berkah</h4>
+                            <p class="text-xs text-gray-500">Jumat, 11 Feb 2026</p>
+                        </div>
+                        <span class="font-bold text-sm text-gray-800">Rp 50.000</span>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="p-4 border-b border-gray-50 hover:bg-gray-50 transition-colors flex items-center gap-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-orange-100 text-orange-600 flex items-center justify-center shrink-0">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="flex-grow">
+                            <h4 class="text-sm font-bold text-gray-800">Zakat Penghasilan</h4>
+                            <p class="text-xs text-gray-500">Senin, 07 Feb 2026</p>
+                        </div>
+                        <span class="font-bold text-sm text-gray-800">Rp 250.000</span>
+                    </div>
+                </div>
+
+                <!-- Settings (Mobile Only - Desktop has sidebar) -->
+                <div class="bg-white rounded-2xl shadow-card overflow-hidden border border-gray-100 mb-8 lg:hidden">
+                    <div class="p-4 border-b border-gray-50 text-xs font-bold text-gray-400 uppercase tracking-wider">
+                        Pengaturan</div>
+
+                    <a href="#"
+                        class="flex items-center justify-between p-4 border-b border-gray-50 hover:bg-gray-50 transition-colors group">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-gray-50 text-gray-500 flex items-center justify-center">
+                                <i class="fas fa-user-edit"></i>
+                            </div>
+                            <span class="font-medium text-gray-700">Edit Profil</span>
+                        </div>
+                        <i
+                            class="fas fa-chevron-right text-gray-300 text-sm group-hover:text-primary transition-colors"></i>
+                    </a>
+
+                    <a href="akun.html"
+                        class="flex items-center justify-between p-4 hover:bg-red-50 transition-colors group">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-red-50 text-red-500 flex items-center justify-center">
+                                <i class="fas fa-sign-out-alt"></i>
+                            </div>
+                            <span class="font-medium text-red-500">Keluar / Logout</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Bottom Navigation Bar (Mobile Only) -->
+    <div
+        class="fixed bottom-0 left-0 right-0 bg-white shadow-nav z-50 px-6 py-3 flex lg:hidden justify-between items-center border-t border-gray-100 pb-safe">
+        <a href="index.html"
+            class="flex flex-col items-center gap-1 text-gray-400 group hover:text-primary transition-colors">
+            <i class="fas fa-home text-xl mb-0.5 group-hover:scale-110 transition-transform"></i>
+            <span class="text-[0.65rem] font-medium">Beranda</span>
+        </a>
+        <a href="program.html"
+            class="flex flex-col items-center gap-1 text-gray-400 group hover:text-primary transition-colors">
+            <i class="fas fa-hand-holding-heart text-xl mb-0.5 group-hover:scale-110 transition-transform"></i>
+            <span class="text-[0.65rem] font-medium">Program</span>
+        </a>
+
+        <!-- Center Donasi Button -->
+        <div class="relative -top-8">
+            <a href="donasi.html"
+                class="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-[#F7941D] to-[#F15A24] text-white shadow-lg shadow-orange-200 hover:shadow-orange-glow transform hover:-translate-y-1 transition-all duration-300 ring-4 ring-white border border-orange-100">
+                <i class="fas fa-heart text-2xl"></i>
+            </a>
+            <span class="absolute -bottom-6 w-full text-center text-[0.65rem] font-bold text-gray-800">Donasi</span>
+        </div>
+
+        <a href="kalkulator.html"
+            class="flex flex-col items-center gap-1 text-gray-400 group hover:text-primary transition-colors">
+            <i class="fas fa-calculator text-xl mb-0.5 group-hover:scale-110 transition-transform"></i>
+            <span class="text-[0.65rem] font-medium">Hitung</span>
+        </a>
+
+        <a href="akun.html" class="flex flex-col items-center gap-1 text-primary group transition-colors">
+            <i class="fas fa-user text-xl mb-0.5 group-hover:scale-110 transition-transform"></i>
+            <span class="text-[0.65rem] font-medium">Akun</span>
+        </a>
+    </div>
+
+    <style>
+        .pb-safe {
+            padding-bottom: env(safe-area-inset-bottom, 1rem);
+        }
+    </style>
+</body>
+
+</html>
