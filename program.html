@@ -396,13 +396,13 @@
 
             <ul class="hidden lg:flex items-center gap-8" id="navbarMenu">
                 <li><a href="index.html"
-                        class="text-[0.9375rem] font-medium text-white/90 hover:text-white relative py-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full nav-link active">Beranda</a>
+                        class="text-[0.9375rem] font-medium text-white/90 hover:text-white relative py-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full nav-link">Beranda</a>
                 </li>
                 <li><a href="kalkulator.html"
                         class="text-[0.9375rem] font-medium text-white/90 hover:text-white relative py-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full nav-link">Kalkulator
                         Zakat</a></li>
                 <li><a href="program.html"
-                        class="text-[0.9375rem] font-medium text-white/90 hover:text-white relative py-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full nav-link">Program</a>
+                        class="text-[0.9375rem] font-medium text-white/90 hover:text-white relative py-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full nav-link active">Program</a>
                 </li>
                 <li><a href="tentang-kami.html"
                         class="text-[0.9375rem] font-medium text-white/90 hover:text-white relative py-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full nav-link">Tentang
@@ -453,296 +453,30 @@
             class="text-lg font-bold text-gray-800 py-3 w-full border-b border-gray-50 flex items-center justify-between group mobile-nav-link">
             Kontak <i class="fas fa-chevron-right text-xs text-gray-300 group-hover:text-primary transition-colors"></i>
         </a>
-        <a href="#donasi"
+        <a href="donasi.html"
             class="btn-primary w-full flex items-center justify-center gap-2 px-6 py-4 mt-8 text-white font-bold rounded-xl shadow-lg shadow-orange-200 mobile-nav-link">
             <i class="fas fa-heart"></i> Donasi Sekarang
         </a>
     </div>
 
-    <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center overflow-hidden pt-20 bg-gray-900" id="beranda">
-        <!-- Swiper Container -->
-        <div class="swiper mySwiper w-full h-full absolute inset-0 z-0">
-            <div class="swiper-wrapper">
-
-                <!-- Slide 1: Ramadan (Spiritual Hook) -->
-                <div class="swiper-slide relative">
-                    <!-- Background Image -->
-                    <div class="absolute inset-0 bg-[url('assets/images/hero-bg.png')] bg-no-repeat bg-center bg-cover">
-                    </div>
-                    <!-- Overlay -->
-                    <div class="absolute inset-0 bg-gray-900/85"></div>
-
-                    <!-- Content -->
-                    <div class="container mx-auto px-5 h-full flex items-center relative z-10 max-w-[1200px]">
-                        <div class="w-full lg:w-2/3">
-                            <span
-                                class="inline-block px-4 py-1 rounded-full bg-primary/20 text-[#FFB347] text-sm font-bold border border-primary/30 mb-6">RAMADAN
-                                1447 H</span>
-                            <h1 class="text-[clamp(2.5rem,5vw,3.5rem)] font-extrabold text-white leading-[1.15] mb-6">
-                                Ramadan Berkah, <br> <span class="text-[#FFB347]">Dampak Nyata.</span>
-                            </h1>
-                            <p class="text-lg text-white/80 mb-8 leading-relaxed max-w-2xl">
-                                Sucikan harta, sempurnakan ibadah. Lihat seberapa besar keberkahan yang bisa Anda
-                                salurkan!
-                            </p>
-                            <div class="flex flex-wrap gap-4 mb-20">
-                                <a href="#kalkulator"
-                                    class="px-8 py-4 bg-gradient-primary rounded-xl text-white font-bold text-lg shadow-orange-glow hover:shadow-orange-glow-hover hover:-translate-y-1 transition-all duration-300 flex items-center gap-2 group/btn">
-                                    <i
-                                        class="fas fa-calculator text-white/90 group-hover/btn:scale-110 transition-transform"></i>
-                                    Hitung Dampak Kebaikan
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 2: Pendidikan (Future Hook) -->
-                <div class="swiper-slide relative">
-                    <!-- Background Image -->
-                    <div
-                        class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1920&q=80')] bg-no-repeat bg-center bg-cover">
-                    </div>
-                    <!-- Overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-900/80 to-transparent">
-                    </div>
-
-                    <!-- Content -->
-                    <div class="container mx-auto px-5 h-full flex items-center relative z-10 max-w-[1200px]">
-                        <div class="w-full lg:w-2/3">
-                            <span
-                                class="inline-block px-4 py-1 rounded-full bg-blue-500/20 text-blue-300 text-sm font-bold border border-blue-500/30 mb-6">BEASISWA
-                                SANG SURYA</span>
-                            <h1 class="text-[clamp(2.5rem,5vw,3.5rem)] font-extrabold text-white leading-[1.15] mb-6">
-                                Mimpi Mereka <br> <span class="text-blue-400">Tak Boleh Putus Sekolah.</span>
-                            </h1>
-                            <p class="text-lg text-white/80 mb-8 leading-relaxed max-w-2xl">
-                                Ratusan siswa dhuafa di Lengkong terancam putus sekolah. Zakat Anda adalah jembatan masa
-                                depan mereka untuk terus berprestasi.
-                            </p>
-                            <div class="flex flex-wrap gap-4 mb-20">
-                                <a href="#donasi"
-                                    class="px-8 py-4 bg-blue-600 rounded-xl text-white font-bold text-lg shadow-lg hover:bg-blue-500 hover:-translate-y-1 transition-all duration-300 flex items-center gap-2">
-                                    <i class="fas fa-graduation-cap"></i> Bantu Beasiswa
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 3: LKSA Taman Harapan (Flagship Hook) -->
-                <div class="swiper-slide relative">
-                    <!-- Background Image -->
-                    <div
-                        class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1920&q=80')] bg-no-repeat bg-center bg-cover">
-                    </div>
-                    <!-- Overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-r from-[#1A1A2E]/90 via-[#1A1A2E]/80 to-transparent">
-                    </div>
-
-                    <!-- Content -->
-                    <div class="container mx-auto px-5 h-full flex items-center relative z-10 max-w-[1200px]">
-                        <div class="w-full lg:w-2/3">
-                            <span
-                                class="inline-block px-4 py-1 rounded-full bg-primary/20 text-[#FFB347] text-sm font-bold border border-primary/30 mb-6">PROGRAM
-                                UNGGULAN</span>
-                            <h1 class="text-[clamp(2.5rem,5vw,3.5rem)] font-extrabold text-white leading-[1.15] mb-6">
-                                Rumah Cinta Bagi <br> <span class="text-primary">Yatim & Dhuafa.</span>
-                            </h1>
-                            <p class="text-lg text-white/80 mb-8 leading-relaxed max-w-2xl">
-                                Menjaga amanah <strong>Panti Asuhan Taman Harapan</strong>, panti Muhammadiyah tertua di
-                                Jawa Barat. Pastikan 50+ anak asuh kita mendapatkan pendidikan, gizi, dan kasih sayang
-                                terbaik.
-                            </p>
-                            <div class="flex flex-wrap gap-4 mb-20">
-                                <a href="#donasi"
-                                    class="px-8 py-4 bg-gradient-primary rounded-xl text-white font-bold text-lg shadow-orange-glow hover:shadow-orange-glow-hover hover:-translate-y-1 transition-all duration-300 flex items-center gap-2">
-                                    <i class="fas fa-hand-holding-heart"></i> Santuni Panti
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Swiper Navigation -->
-            <div class="swiper-button-next !text-white/50 hover:!text-white transition-colors"></div>
-            <div class="swiper-button-prev !text-white/50 hover:!text-white transition-colors"></div>
-
-            <!-- Swiper Pagination -->
-            <div class="swiper-pagination"></div>
+    <!-- Page Header -->
+    <section class="relative pt-40 pb-20 bg-gray-900 overflow-hidden">
+        <div class="absolute inset-0 bg-[url('assets/images/hero-bg.png')] bg-no-repeat bg-center bg-cover opacity-30">
         </div>
-
-        <!-- Static Wave Divider Region (Overlaying the Swiper) -->
-        <div class="absolute bottom-0 left-0 right-0 pointer-events-none leading-none z-20">
-            <!-- Stats Bar - Tablet/Desktop -->
-            <div class="container mx-auto px-5 max-w-[1200px] mb-8 hidden md:block relative z-30">
-                <div class="flex justify-end">
-                    <div
-                        class="flex gap-8 text-white/80 border-t border-white/10 pt-5 pb-5 backdrop-blur-md bg-black/20 rounded-xl px-8 pointer-events-auto hover:bg-black/30 transition-all duration-300 shadow-lg">
-                        <div class="text-center">
-                            <strong class="block text-white text-2xl font-bold count-up" data-target="1450"
-                                data-suffix="+">0</strong>
-                            <span class="text-sm">Donatur</span>
-                        </div>
-                        <div class="text-center border-l border-white/20 pl-8">
-                            <strong class="block text-white text-2xl font-bold count-up" data-target="500"
-                                data-suffix="+">0</strong>
-                            <span class="text-sm">Penerima</span>
-                        </div>
-                        <div class="text-center border-l border-white/20 pl-8">
-                            <strong class="block text-white text-2xl font-bold count-up" data-target="2.5"
-                                data-prefix="Rp " data-suffix=" M" data-decimal="true">0</strong>
-                            <span class="text-sm">Tersalurkan</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Stats Bar - Mobile Only -->
-            <div class="md:hidden relative z-30 pointer-events-auto">
-                <div class="stats-card-mobile">
-                    <div class="stats-item-mobile">
-                        <strong class="count-up" data-target="1450" data-suffix="+">0</strong>
-                        <span>Donatur</span>
-                    </div>
-                    <div class="stats-item-mobile border-l border-white/10">
-                        <strong class="count-up" data-target="500" data-suffix="+">0</strong>
-                        <span>Penerima</span>
-                    </div>
-                    <div class="stats-item-mobile border-l border-white/10">
-                        <strong class="count-up" data-target="2.5" data-suffix="M" data-decimal="true">0</strong>
-                        <span>Salur</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Wave Divider -->
-            <svg class="w-full h-[30px] sm:h-[60px] md:h-[100px] text-[#FAFAFA] fill-current" viewBox="0 0 1440 120"
-                preserveAspectRatio="none">
-                <path
-                    d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z">
-                </path>
-            </svg>
+        <div class="absolute inset-0 bg-gradient-to-b from-gray-900/50 via-gray-900/80 to-gray-900"></div>
+        <div class="container mx-auto px-5 relative z-10 text-center max-w-[1200px]">
+            <span
+                class="inline-block px-4 py-1 rounded-full bg-primary/20 text-[#FFB347] text-sm font-bold border border-primary/30 mb-6"
+                data-aos="fade-up">ZAKAT, INFAQ, SEDEKAH</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6" data-aos="fade-up" data-aos-delay="100">
+                Program Kebaikan</h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+                Pilih ladang pahala Anda. Setiap program dirancang untuk memberikan dampak maksimal bagi penerima
+                manfaat di Lengkong.
+            </p>
         </div>
     </section>
 
-
-
-    <!-- Calculator Section -->
-    <!-- Calculator Teaser Section -->
-    <section class="py-20 bg-white" id="kalkulator">
-        <div class="container mx-auto px-5 max-w-[1200px]">
-            <div class="bg-gradient-to-br from-[#1A1A2E] to-[#2D2D44] rounded-[2.5rem] p-8 md:p-16 relative overflow-hidden shadow-2xl"
-                data-aos="fade-up">
-                <!-- Background Decoration -->
-                <div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl -mr-20 -mt-20"></div>
-                <div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -ml-20 -mb-20">
-                </div>
-
-                <div class="relative z-10 flex flex-col lg:flex-row items-center gap-12">
-                    <div class="lg:w-1/2 text-center lg:text-left">
-                        <span
-                            class="inline-block px-4 py-2 bg-white/10 text-[#FFB347] text-sm font-bold rounded-full mb-6 border border-white/10">
-                            <i class="fas fa-calculator mr-2"></i>Kalkulator Zakat
-                        </span>
-                        <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
-                            Sudah Tahu Berapa <span class="text-primary">Zakat Anda?</span>
-                        </h2>
-                        <p class="text-lg text-white/80 mb-8 leading-relaxed">
-                            Jangan ragu. Gunakan alat bantu hitung kami untuk mengetahui kewajiban zakat maal atau
-                            profesi Anda dengan akurat sesuai nisab. Hanya butuh 1 menit.
-                        </p>
-                        <a href="kalkulator.html"
-                            class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#F7941D] to-[#F15A24] text-white font-bold rounded-xl shadow-lg hover:shadow-orange-glow transition-all hover:-translate-y-1">
-                            Hitung Sekarang <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                    <div class="lg:w-1/2 flex justify-center">
-                        <img src="assets/images/calculator-mockup.png" alt="Ilustrasi Kalkulator"
-                            class="w-full max-w-md drop-shadow-2xl" onerror="this.style.display='none';">
-                        <!-- Fallback Icon if image missing -->
-                        <div
-                            class="text-[10rem] text-white/10 absolute right-10 top-1/2 -translate-y-1/2 hidden lg:block">
-                            <i class="fas fa-calculator"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Authority & Trust Teaser Section -->
-    <section class="py-24 bg-[#FAFAFA]" id="tentang">
-        <div class="container mx-auto px-5 max-w-[1200px]">
-            <div class="flex flex-col lg:flex-row items-center gap-16">
-                <!-- Image/Visual Side -->
-                <div class="lg:w-1/2 relative" data-aos="fade-right">
-                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-orange-100 rounded-full blur-3xl opacity-60">
-                    </div>
-                    <div
-                        class="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white transform rotate-3 hover:rotate-0 transition-all duration-500">
-                        <img src="assets/images/about-collage.png" alt="Lazismu Lengkong Activity" class="w-full h-auto"
-                            onerror="this.src='https://images.unsplash.com/photo-1593113598332-cd288d649433?w=800&q=80'">
-                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-8">
-                            <p class="text-white font-bold text-lg"><i
-                                    class="fas fa-map-marker-alt text-primary mr-2"></i>Kecamatan Lengkong, Kota Bandung
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Content Side -->
-                <div class="lg:w-1/2" data-aos="fade-left">
-                    <span
-                        class="inline-block px-4 py-2 bg-gradient-to-r from-[#F7941D] to-[#F15A24] text-white text-sm font-semibold rounded-full mb-6">
-                        Mengapa Lazismu Lengkong?
-                    </span>
-                    <h2 class="text-3xl md:text-5xl font-extrabold text-[#1A1A2E] mb-6 leading-tight">
-                        Amanah yang Berakar, <br><span class="text-primary">Dampak yang Melebar.</span>
-                    </h2>
-                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                        Kami bukan sekadar penyalur, kami adalah pengelola ekosistem kebaikan di bawah naungan
-                        Muhammadiyah Lengkong. Dari <strong>Panti Asuhan Taman Harapan</strong> yang bersejarah hingga
-                        puluhan sekolah yang mencerahkan bangsa.
-                    </p>
-
-                    <ul class="space-y-4 mb-10">
-                        <li class="flex items-center gap-4 group">
-                            <div
-                                class="w-10 h-10 rounded-full bg-green-50 flex items-center justify-center text-green-600 group-hover:scale-110 transition-transform">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="text-gray-700 font-medium">Terdaftar & Diawasi Kemenag RI</span>
-                        </li>
-                        <li class="flex items-center gap-4 group">
-                            <div
-                                class="w-10 h-10 rounded-full bg-green-50 flex items-center justify-center text-green-600 group-hover:scale-110 transition-transform">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="text-gray-700 font-medium">Audit Syariah & Keuangan Transparan</span>
-                        </li>
-                        <li class="flex items-center gap-4 group">
-                            <div
-                                class="w-10 h-10 rounded-full bg-green-50 flex items-center justify-center text-green-600 group-hover:scale-110 transition-transform">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <span class="text-gray-700 font-medium">Bagian dari Persyarikatan Muhammadiyah</span>
-                        </li>
-                    </ul>
-
-                    <a href="tentang-kami.html"
-                        class="inline-flex items-center text-primary font-bold text-lg hover:underline underline-offset-4 decoration-2">
-                        Pelajari Sejarah Kami <i class="fas fa-arrow-right ml-2 animate-bounce-slow text-sm"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Programs Section -->
     <section class="py-24 bg-white" id="program">
         <div class="container mx-auto px-5 max-w-[1200px]">
             <div class="text-center mb-16" data-aos="fade-up">
@@ -780,7 +514,7 @@
                             <span class="text-xs text-gray-400 block mb-1">Mulai dari</span>
                             <strong class="text-xl text-[#1A1A2E]">2.5% x Harta</strong>
                         </div>
-                        <a href="#donasi"
+                        <a href="donasi.html"
                             class="btn-primary w-full py-3 rounded-xl text-white font-semibold flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-orange-200 transition-all">
                             <i class="fas fa-calculator"></i> Hitung & Bayar
                         </a>
@@ -823,7 +557,7 @@
                             </div>
                         </div>
 
-                        <a href="#donasi"
+                        <a href="donasi.html"
                             class="btn-primary w-full py-3 rounded-xl text-white font-semibold flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-orange-200 transition-all">
                             <i class="fas fa-heart"></i> Donasi Sekarang
                         </a>
@@ -853,7 +587,7 @@
                             <span class="text-xs text-gray-400 block mb-1">Per Siswa/Bulan</span>
                             <strong class="text-xl text-[#1A1A2E]">Rp 250.000</strong>
                         </div>
-                        <a href="#donasi"
+                        <a href="donasi.html"
                             class="btn-primary w-full py-3 rounded-xl text-white font-semibold flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-orange-200 transition-all">
                             <i class="fas fa-graduation-cap"></i> Jadi Donatur
                         </a>
@@ -883,7 +617,7 @@
                             <span class="text-xs text-gray-400 block mb-1">Per Paket</span>
                             <strong class="text-xl text-[#1A1A2E]">Rp 25.000</strong>
                         </div>
-                        <a href="#donasi"
+                        <a href="donasi.html"
                             class="btn-primary w-full py-3 rounded-xl text-white font-semibold flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-orange-200 transition-all">
                             <i class="fas fa-box-open"></i> Sumbang Paket
                         </a>
@@ -1112,39 +846,58 @@
                 </div>
             </div>
 
+            <!-- Live Counter -->
+            <div class="max-w-[900px] mx-auto mt-20" data-aos="fade-up" data-aos-delay="300">
+                <div class="bg-[#1A1A2E] rounded-3xl p-8 md:p-12 relative overflow-hidden shadow-2xl">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl -mr-20 -mt-20">
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -ml-20 -mb-20">
+                    </div>
 
-        </div>
-    </section>
-
-    <!-- Donation CTA Section -->
-    <section class="py-24 bg-white" id="donasi">
-        <div class="container mx-auto px-5 max-w-[1200px]">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <span
-                    class="inline-block px-4 py-2 bg-gradient-to-r from-[#F7941D] to-[#F15A24] text-white text-sm font-semibold rounded-full mb-4">
-                    Tunaikan Sekarang
-                </span>
-                <h2 class="text-[clamp(1.75rem,4vw,2.5rem)] font-extrabold text-[#1A1A2E] mb-4 leading-tight">
-                    Sempurnakan Ibadah, Mulai Dampak Nyata
-                </h2>
-                <p class="text-lg text-gray-600 max-w-[700px] mx-auto mb-10">
-                    Ramadan hanya 30 hari, namun dampak di Taman Harapan bertahan selamanya. Berapapun angka Anda, bagi
-                    mereka itu adalah doa yang terkabul.
-                </p>
-
-                <a href="donasi.html"
-                    class="inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-[#F7941D] to-[#F15A24] text-white font-bold text-xl rounded-2xl shadow-xl shadow-orange-200 hover:shadow-orange-glow hover:-translate-y-1 transition-all duration-300">
-                    <i class="fas fa-heart"></i> Donasi Sekarang
-                </a>
-
-                <p class="mt-6 text-sm text-gray-500 font-medium">
-                    <i class="fas fa-shield-alt text-primary mr-1"></i> Transaksi Aman, Transparan & Sesuai Syariah
-                </p>
+                    <div class="relative z-10 flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 rounded-full bg-red-500/20 text-red-500 animate-[pulse_2s_infinite]">
+                            <i class="fas fa-circle text-xl"></i>
+                        </div>
+                        <div class="flex-1 text-center md:text-left">
+                            <span class="text-gray-400 text-sm font-bold uppercase tracking-wider mb-2 block">Update
+                                Terkini</span>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                <div>
+                                    <strong class="block text-3xl md:text-4xl font-bold text-white mb-1">Rp 1.5
+                                        M+</strong>
+                                    <span class="text-gray-400 text-sm">Terkumpul Ramadan Ini</span>
+                                </div>
+                                <div>
+                                    <strong class="block text-3xl md:text-4xl font-bold text-white mb-1">1,847</strong>
+                                    <span class="text-gray-400 text-sm">Donatur Bergabung</span>
+                                </div>
+                                <div>
+                                    <strong class="block text-3xl md:text-4xl font-bold text-white mb-1">76%</strong>
+                                    <span class="text-gray-400 text-sm">Target Tercapai</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary text-white text-center">
+        <div class="container mx-auto px-5" data-aos="zoom-in">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Siap Berbagi Kebaikan?</h2>
+            <p class="text-xl opacity-90 mb-10 max-w-2xl mx-auto">
+                Setiap rupiah yang Anda donasikan akan menjadi asa baru bagi mereka yang membutuhkan.
+            </p>
+            <a href="donasi.html"
+                class="inline-block px-8 py-4 bg-white text-primary font-bold rounded-xl shadow-lg hover:-translate-y-1 transition-transform">
+                <i class="fas fa-heart mr-2"></i> Donasi Sekarang
+            </a>
+        </div>
+    </section>
+
     <!-- Floating Buttons -->
     <a href="https://wa.me/6281234567890" target="_blank"
         class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center text-3xl shadow-[0_4px_12px_rgba(37,211,102,0.4)] hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(37,211,102,0.6)] transition-all animate-bounce-slow"
@@ -1164,13 +917,14 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <!-- Brand -->
                 <div>
-                    <a href="#" class="flex flex-col items-start gap-1 mb-6">
-                        <img src="assets/images/lazismuasli.png" alt="Lazismu Logo"
-                            class="h-10 w-auto filter brightness-0 invert">
-                        <span class="text-[0.625rem] font-normal tracking-wide text-white/70 ml-1"
-                            style="font-family: 'Lato', sans-serif;">
-                            lengkong
-                        </span>
+                    <a href="#" class="flex items-center gap-3 mb-6">
+                        <img src="assets/images/lazismuasli.png" alt="Logo Lazismu"
+                            class="h-10 transition-all logo-img filter brightness-0 invert"
+                            onerror="this.style.display='none'">
+                        <div class="flex flex-col leading-none">
+                            <span class="text-xl font-extrabold text-[#F7941D]">LAZISMU</span>
+                            <span class="text-xs font-semibold text-gray-400 tracking-[0.15em]">LENGKONG</span>
+                        </div>
                     </a>
                     <p class="text-gray-400 mb-6 leading-relaxed">
                         Lembaga Amil Zakat Nasional tingkat Kantor Layanan (KL) di bawah naungan Muhammadiyah Lengkong.
@@ -1351,7 +1105,220 @@
             link.addEventListener('click', closeMenuHandler);
         });
 
+        // Donation Tabs Logic
+        const donationTabs = document.querySelectorAll('.donation-tab');
+        donationTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                donationTabs.forEach(t => {
+                    t.classList.remove('bg-primary', 'text-white', 'active');
+                    t.classList.add('text-gray-500');
+                });
 
+                // Add active class to clicked tab
+                tab.classList.remove('text-gray-500');
+                tab.classList.add('bg-primary', 'text-white', 'active');
+            });
+        });
+
+        // Donation Amount Buttons
+        const amountBtns = document.querySelectorAll('.amount-btn');
+        const amountInput = document.getElementById('donationAmount');
+
+        amountBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const amount = btn.getAttribute('data-amount');
+
+                // Reset all buttons style
+                amountBtns.forEach(b => {
+                    b.classList.remove('border-primary', 'bg-orange-50', 'text-primary');
+                    b.classList.add('border-gray-200', 'text-gray-600');
+                });
+
+                // Active style
+                btn.classList.remove('border-gray-200', 'text-gray-600');
+                btn.classList.add('border-primary', 'bg-orange-50', 'text-primary');
+
+                if (amount !== 'custom') {
+                    amountInput.value = amount;
+                } else {
+                    amountInput.value = '';
+                    amountInput.focus();
+                }
+            });
+        });
+
+        // Payment Method Toggling
+        const paymentRadios = document.querySelectorAll('input[name="payment_method"]');
+        const paymentDetails = document.querySelectorAll('.payment-detail');
+
+        paymentRadios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                const selectedMethod = radio.value;
+
+                // Hide all details
+                paymentDetails.forEach(detail => {
+                    detail.classList.add('hidden');
+                    detail.classList.remove('block');
+                });
+
+                // Show selected detail
+                const selectedDetail = document.getElementById(`payment-${selectedMethod}`);
+                if (selectedDetail) {
+                    selectedDetail.classList.remove('hidden');
+                    selectedDetail.classList.add('block');
+                }
+            });
+        });
+
+        // ============================================
+        // Zakat Calculator Logic
+        // ============================================
+        let currentStep = 1;
+
+        window.nextStep = function (step) {
+            if (!validateStep(step)) return;
+
+            const currentStepEl = document.querySelector(`.calc-step[data-step="${step}"]`);
+            const nextStepEl = document.querySelector(`.calc-step[data-step="${step + 1}"]`);
+
+            currentStepEl.classList.add('hidden');
+            currentStepEl.classList.remove('active');
+
+            nextStepEl.classList.remove('hidden');
+            nextStepEl.classList.add('active');
+
+            currentStep = step + 1;
+            updateCalculatorProgress();
+        };
+
+        window.prevStep = function (step) {
+            const currentStepEl = document.querySelector(`.calc-step[data-step="${step}"]`);
+            const prevStepEl = document.querySelector(`.calc-step[data-step="${step - 1}"]`);
+
+            currentStepEl.classList.add('hidden');
+            currentStepEl.classList.remove('active');
+
+            prevStepEl.classList.remove('hidden');
+            prevStepEl.classList.add('active');
+
+            currentStep = step - 1;
+            updateCalculatorProgress();
+        };
+
+        function updateCalculatorProgress() {
+            const progressFill = document.getElementById('progressFill');
+            const indicators = document.querySelectorAll('.step-indicator');
+
+            const percentage = (currentStep / 4) * 100;
+            progressFill.style.width = `${percentage}%`;
+
+            indicators.forEach((ind, idx) => {
+                const stepNum = idx + 1;
+                if (stepNum < currentStep) {
+                    ind.classList.add('bg-primary', 'text-white', 'border-primary');
+                    ind.classList.remove('text-gray-400', 'border-gray-200');
+                } else if (stepNum === currentStep) {
+                    ind.classList.add('text-primary', 'border-primary', 'active');
+                    ind.classList.remove('bg-primary', 'text-white', 'text-gray-400', 'border-gray-200');
+                } else {
+                    ind.classList.remove('bg-primary', 'text-white', 'border-primary', 'active');
+                    ind.classList.add('text-gray-400', 'border-gray-200');
+                }
+            });
+        }
+
+        function validateStep(step) {
+            if (step === 1) {
+                const checked = !!document.querySelector('input[name="focus"]:checked');
+                if (!checked) alert('Silakan pilih salah satu fokus bantuan');
+                return checked;
+            }
+            if (step === 2) {
+                const val = document.getElementById('assetAmount').value;
+                if (!val || val === '0') {
+                    alert('Silakan masukkan nilai aset Anda');
+                    return false;
+                }
+                return true;
+            }
+            if (step === 3) {
+                const checked = !!document.querySelector('input[name="style"]:checked');
+                if (!checked) alert('Silakan pilih gaya berbagi Anda');
+                return checked;
+            }
+            return true;
+        }
+
+        const calcForm = document.getElementById('zakatCalculator');
+        calcForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('donorName').value;
+            const sa = document.getElementById('assetAmount').value.replace(/\D/g, '');
+            const asset = parseInt(sa) || 0;
+            const style = document.querySelector('input[name="style"]:checked').value;
+            const focus = document.querySelector('input[name="focus"]:checked').value;
+
+            let zakatVal = (style === 'zakat') ? asset * 0.025 : asset * 0.01;
+
+            // Impact Calculation
+            const meals = Math.floor(zakatVal / 250000);
+            const orphans = Math.floor(zakatVal / 500000);
+            const students = Math.floor(zakatVal / 400000);
+
+            // Populate Results
+            document.getElementById('resultName').textContent = name;
+            document.getElementById('resultZakat').textContent = 'Rp ' + zakatVal.toLocaleString('id-ID');
+            document.getElementById('resultMeals').textContent = meals;
+            document.getElementById('resultOrphans').textContent = Math.max(1, orphans);
+            document.getElementById('resultStudents').textContent = Math.max(1, students);
+
+            let category = 'Friend of the Needy';
+            if (zakatVal >= 10000000) category = 'Sultan of Generosity';
+            else if (zakatVal >= 5000000) category = 'Champion of Lengkong';
+            else if (zakatVal >= 1000000) category = 'Guardian of Education';
+            document.getElementById('resultCategory').textContent = category;
+
+            calcForm.classList.add('hidden');
+            document.getElementById('calcResult').classList.remove('hidden');
+            document.getElementById('kalkulator').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        window.copyAccount = function (accountNumber) {
+            navigator.clipboard.writeText(accountNumber).then(() => {
+                alert('Nomor rekening berhasil disalin!');
+            }).catch(() => {
+                const textArea = document.createElement('textarea');
+                textArea.value = accountNumber;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                alert('Nomor rekening berhasil disalin!');
+            });
+        };
+
+        window.resetCalculator = function () {
+            currentStep = 1;
+            calcForm.reset();
+            calcForm.classList.remove('hidden');
+            document.getElementById('calcResult').classList.add('hidden');
+            document.querySelectorAll('.calc-step').forEach(s => s.classList.add('hidden'));
+            document.querySelector('.calc-step[data-step="1"]').classList.remove('hidden');
+            updateCalculatorProgress();
+        };
+
+        window.scrollToDonation = function () {
+            document.getElementById('donasi').scrollIntoView({ behavior: 'smooth' });
+        };
+
+        const assetInput = document.getElementById('assetAmount');
+        if (assetInput) {
+            assetInput.addEventListener('input', function () {
+                let value = this.value.replace(/\D/g, '');
+                this.value = value ? parseInt(value).toLocaleString('id-ID') : '';
+            });
+        }
 
         // Back to Top Logic
         const bttBtn = document.getElementById('backToTop');

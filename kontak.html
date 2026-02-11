@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Lazismu Lengkong - Lembaga Amil Zakat Infaq Sedekah Muhammadiyah Kecamatan Lengkong, Kota Bandung. Tunaikan zakat, infaq dan sedekah Anda untuk warga Lengkong.">
+    <meta name="keywords"
+        content="lazismu, zakat, infaq, sedekah, lengkong, bandung, muhammadiyah, panti taman harapan, ramadan">
+    <meta name="author" content="Aegner & Revan - Lazismu Lengkong">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lazismulengkong.org/">
+    <meta property="og:title" content="Lazismu Lengkong - Zakat Untuk Tetangga Terdekat">
+    <meta property="og:description"
+        content="Tunaikan zakat, infaq dan sedekah Anda untuk warga Kecamatan Lengkong & Kota Bandung melalui Lazismu Lengkong.">
+    <meta property="og:image" content="../assets/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://lazismulengkong.org/">
+    <meta property="twitter:title" content="Lazismu Lengkong - Zakat Untuk Tetangga Terdekat">
+    <meta property="twitter:description"
+        content="Tunaikan zakat, infaq dan sedekah Anda untuk warga Kecamatan Lengkong & Kota Bandung.">
+
+    <title>Lazismu Lengkong | Zakat, Infaq & Sedekah untuk Warga Lengkong</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Amiri:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#F7941D',
+                            light: '#FFB347',
+                            dark: '#E67E22',
+                        },
+                        secondary: {
+                            DEFAULT: '#00A651',
+                            light: '#2ECC71',
+                            dark: '#27AE60',
+                        },
+                        accent: {
+                            DEFAULT: '#F15A24',
+                            light: '#FF7043',
+                        },
+                        dark: {
+                            DEFAULT: '#1A1A2E',
+                            light: '#2D2D44',
+                        },
+                        light: '#FAFAFA',
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        arabic: ['Amiri', 'serif'],
+                    },
+                    borderRadius: {
+                        'xl': '12px',
+                        '2xl': '16px',
+                        '3xl': '24px',
+                    },
+                    boxShadow: {
+                        'sm': '0 2px 4px rgba(0, 0, 0, 0.05)',
+                        'DEFAULT': '0 4px 6px rgba(0, 0, 0, 0.1)',
+                        'md': '0 8px 16px rgba(0, 0, 0, 0.1)',
+                        'lg': '0 16px 32px rgba(0, 0, 0, 0.15)',
+                        'xl': '0 24px 48px rgba(0, 0, 0, 0.2)',
+                        'card': '0 10px 40px rgba(0, 0, 0, 0.05)',
+                        'card-hover': '0 15px 50px rgba(247, 148, 29, 0.12)',
+                        'orange-glow': '0 4px 15px rgba(247, 148, 29, 0.4)',
+                        'orange-glow-hover': '0 6px 20px rgba(247, 148, 29, 0.5)',
+                    },
+                    backgroundImage: {
+                        'gradient-primary': 'linear-gradient(135deg, #F7941D 0%, #F15A24 100%)',
+                        'gradient-card': 'linear-gradient(135deg, rgba(247, 148, 29, 0.1) 0%, rgba(241, 90, 36, 0.1) 100%)',
+                        'gradient-dark': 'linear-gradient(135deg, #1A1A2E 0%, #2D2D44 100%)',
+                        'gradient-hero': 'linear-gradient(135deg, rgba(26, 26, 46, 0.92) 0%, rgba(45, 45, 68, 0.88) 50%, rgba(61, 30, 109, 0.85) 100%)',
+                    },
+                    animation: {
+                        'float': 'float 4s ease-in-out infinite',
+                        'float-fast': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'scroll': 'scroll 30s linear infinite',
+                        'fade-in': 'fadeIn 0.3s ease-out forwards',
+                        'bounce-slow': 'bounce 2s infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        scroll: {
+                            '0%': { transform: 'translateX(0)' },
+                            '100%': { transform: 'translateX(-50%)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* ============================================ */
+        /* OVERFLOW FIX - CRITICAL                      */
+        /* ============================================ */
+
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        html {
+            overflow-x: hidden !important;
+            width: 100%;
+            max-width: 100vw;
+        }
+
+        body {
+            overflow-x: hidden !important;
+            width: 100%;
+            max-width: 100vw;
+            position: relative;
+        }
+
+        /* Container Width Fix - Mobile Only */
+        @media (max-width: 1024px) {
+            .container {
+                padding-left: 1.25rem;
+                padding-right: 1.25rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            section {
+                overflow-x: hidden;
+            }
+
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #FAFAFA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #F7941D;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #E67E22;
+        }
+
+        /* Navbar scrolled state */
+        #navbar.scrolled {
+            background: white !important;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            padding-top: 0.75rem !important;
+            padding-bottom: 0.75rem !important;
+        }
+
+        #navbar.scrolled .logo-img {
+            filter: none !important;
+        }
+
+        #navbar.scrolled .logo-text-sub {
+            color: #6B7280 !important;
+            /* text-gray-500 */
+        }
+
+        #navbar.scrolled .toggle-bar {
+            background: #1A1A2E !important;
+        }
+
+        #navbar.scrolled .nav-link {
+            color: #1A1A2E !important;
+        }
+
+        #navbar.scrolled .nav-link:hover {
+            color: #F7941D !important;
+        }
+
+        ::selection {
+            background: rgba(247, 148, 29, 0.2);
+            color: #F7941D;
+        }
+
+        /* Utility for Text Gradients that Tailwind doesn't support easily inline with specific stops */
+        .text-gradient {
+            background: linear-gradient(135deg, #F7941D 0%, #F15A24 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Primary Button Utility - Restored from original design */
+        .btn-primary {
+            background: linear-gradient(135deg, #F7941D 0%, #F15A24 100%);
+            box-shadow: 0 4px 15px rgba(247, 148, 29, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(247, 148, 29, 0.5);
+        }
+
+        /* Nav Link Active State */
+        .nav-link.active {
+            color: #F7941D !important;
+            /* Force primary color when active */
+        }
+
+        .nav-link.active::after {
+            width: 100%;
+            /* Show underline */
+        }
+
+        /* ============================================ */
+        /* GLOBAL RESPONSIVE FIXES                      */
+        /* ============================================ */
+
+        /* Hero Height Fix for Mobile Browser Chrome */
+        #beranda {
+            min-height: 100vh;
+            min-height: 100svh;
+        }
+
+        @media (max-width: 768px) {
+            .logo-container {
+                gap: 0.25rem;
+            }
+
+            .logo-img {
+                height: 2.25rem;
+            }
+
+            .logo-text-sub {
+                font-size: 0.55rem !important;
+            }
+        }
+
+        /* Swiper Navigation Mobile */
+        @media (max-width: 640px) {
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                display: none !important;
+                /* Hide arrows on mobile to save space */
+            }
+
+            .swiper-pagination {
+                bottom: 120px !important;
+                /* Move above the mobile stats */
+            }
+        }
+
+        /* Stats Bar Responsive */
+        .stats-card-mobile {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            max-width: 100vw;
+            gap: 0.75rem;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 0.75rem 0.5rem;
+            text-align: center;
+        }
+
+        .stats-item-mobile strong {
+            display: block;
+            color: white;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        .stats-item-mobile span {
+            display: block;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Form Steps Mobile */
+        @media (max-width: 480px) {
+            .step-indicator {
+                width: 1.5rem !important;
+                height: 1.5rem !important;
+                font-size: 0.75rem !important;
+            }
+        }
+
+        /* Swiper Customization - Restored */
+        .swiper-pagination {
+            bottom: 120px !important;
+            left: 50% !important;
+            transform: translateX(-50%);
+            width: auto !important;
+            z-index: 15;
+        }
+
+        @media (max-width: 1024px) {
+            .swiper-pagination {
+                bottom: 80px !important;
+            }
+        }
+
+        .swiper-pagination-bullet {
+            background: white;
+            opacity: 0.5;
+            width: 10px;
+            height: 10px;
+            transition: all 0.3s;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #F7941D;
+            opacity: 1;
+            width: 30px;
+            border-radius: 5px;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: white;
+            transition: color 0.3s;
+        }
+
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+            color: #F7941D;
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-800 bg-white overflow-x-hidden antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 bg-transparent backdrop-blur-sm"
+        id="navbar">
+        <div class="container mx-auto px-5 flex items-center justify-between max-w-[1200px]">
+            <a href="#" class="flex flex-col items-center gap-1 group relative logo-container">
+                <!-- Logo Image (already contains LAZISMU text) -->
+                <img src="assets/images/lazismuasli.png" alt="Lazismu Logo"
+                    class="h-10 w-auto transition-all duration-300 logo-img filter brightness-0 invert">
+
+                <!-- Lengkong text below logo -->
+                <span
+                    class="text-[0.625rem] font-normal tracking-wide text-white/70 logo-text-sub transition-colors duration-300"
+                    style="font-family: 'Lato', sans-serif;">
+                    lengkong
+                </span>
+            </a>
+
+            <button class="lg:hidden flex flex-col gap-[5px] p-2" id="navbarToggle" aria-label="Toggle navigation">
+                <span class="w-[25px] h-[3px] bg-white rounded-sm transition-all toggle-bar"></span>
+                <span class="w-[25px] h-[3px] bg-white rounded-sm transition-all toggle-bar"></span>
+                <span class="w-[25px] h-[3px] bg-white rounded-sm transition-all toggle-bar"></span>
+            </button>
+
+            <ul class="hidden lg:flex items-center gap-8" id="navbarMenu">
+                <li><a href="index.html"
+                        class="text-[0.9375rem] font-medium text-white/90 hover:text-white relative py-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full nav-link">Beranda</a>
+                </li>
+                <li><a href="kalkulator.html"
+                        class="text-[0.9375rem] font-medium text-white/90 hover:text-white relative py-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full nav-link">Kalkulator
+                        Zakat</a></li>
+                <li><a href="program.html"
+                        class="text-[0.9375rem] font-medium text-white/90 hover:text-white relative py-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full nav-link">Program</a>
+                </li>
+                <li><a href="tentang-kami.html"
+                        class="text-[0.9375rem] font-medium text-white/90 hover:text-white relative py-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full nav-link">Tentang
+                        Kami</a></li>
+                <li><a href="kontak.html"
+                        class="text-[0.9375rem] font-medium text-white/90 hover:text-white relative py-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full nav-link active">Kontak</a>
+                </li>
+                <li><a href="donasi.html"
+                        class="btn-primary flex items-center justify-center gap-2 px-6 py-2.5 text-white font-semibold rounded-lg transition-transform hover:-translate-y-0.5">Donasi
+                        Sekarang</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Backdrop -->
+    <div class="fixed inset-0 bg-black/50 z-[55] opacity-0 invisible transition-all duration-300 lg:hidden"
+        id="menuBackdrop"></div>
+
+    <!-- Mobile Menu (Outside nav to avoid backdrop-blur inheritance) -->
+    <div class="fixed top-0 right-[-100%] w-[85%] max-w-[320px] h-screen bg-white shadow-2xl flex flex-col items-start px-8 pt-24 pb-10 gap-2 transition-all duration-500 lg:hidden z-[100]"
+        id="mobileMenu">
+        <div class="w-full flex justify-between items-center mb-10">
+            <span class="text-xs font-bold text-gray-400 tracking-widest uppercase">Menu Navigasi</span>
+            <button id="closeMenu" class="text-gray-400 hover:text-primary"><i
+                    class="fas fa-times text-xl"></i></button>
+        </div>
+        <a href="#beranda"
+            class="text-lg font-bold text-gray-800 py-3 w-full border-b border-gray-50 flex items-center justify-between group mobile-nav-link">
+            Beranda <i
+                class="fas fa-chevron-right text-xs text-gray-300 group-hover:text-primary transition-colors"></i>
+        </a>
+        <a href="#kalkulator"
+            class="text-lg font-bold text-gray-800 py-3 w-full border-b border-gray-50 flex items-center justify-between group mobile-nav-link">
+            Kalkulator <i
+                class="fas fa-chevron-right text-xs text-gray-300 group-hover:text-primary transition-colors"></i>
+        </a>
+        <a href="#program"
+            class="text-lg font-bold text-gray-800 py-3 w-full border-b border-gray-50 flex items-center justify-between group mobile-nav-link">
+            Program <i
+                class="fas fa-chevron-right text-xs text-gray-300 group-hover:text-primary transition-colors"></i>
+        </a>
+        <a href="#tentang"
+            class="text-lg font-bold text-gray-800 py-3 w-full border-b border-gray-50 flex items-center justify-between group mobile-nav-link">
+            Tentang Kami <i
+                class="fas fa-chevron-right text-xs text-gray-300 group-hover:text-primary transition-colors"></i>
+        </a>
+        <a href="#kontak"
+            class="text-lg font-bold text-gray-800 py-3 w-full border-b border-gray-50 flex items-center justify-between group mobile-nav-link">
+            Kontak <i class="fas fa-chevron-right text-xs text-gray-300 group-hover:text-primary transition-colors"></i>
+        </a>
+        <a href="#donasi"
+            class="btn-primary w-full flex items-center justify-center gap-2 px-6 py-4 mt-8 text-white font-bold rounded-xl shadow-lg shadow-orange-200 mobile-nav-link">
+            <i class="fas fa-heart"></i> Donasi Sekarang
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <!-- Page Header -->
+    <section class="relative pt-40 pb-20 bg-gray-900 overflow-hidden">
+        <div class="absolute inset-0 bg-[url('assets/images/hero-bg.png')] bg-no-repeat bg-center bg-cover opacity-30">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-gray-900/50 via-gray-900/80 to-gray-900"></div>
+        <div class="container mx-auto px-5 relative z-10 text-center max-w-[1200px]">
+            <span
+                class="inline-block px-4 py-1 rounded-full bg-primary/20 text-[#FFB347] text-sm font-bold border border-primary/30 mb-6"
+                data-aos="fade-up">SILATURAHMI</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6" data-aos="fade-up" data-aos-delay="100">
+                Hubungi Kami</h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+                Ada pertanyaan atau ingin berkonsultasi seputar ZIS? Tim kami siap membantu Anda dengan sepenuh hati.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-24 bg-[#FAFAFA]" id="kontak">
+        <div class="container mx-auto px-5 max-w-[1200px]">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <span
+                        class="inline-block px-4 py-2 bg-gradient-to-r from-[#F7941D] to-[#F15A24] text-white text-sm font-semibold rounded-full mb-4">Hubungi
+                        Kami</span>
+                    <h2 class="text-[clamp(1.75rem,4vw,2.5rem)] font-extrabold text-[#1A1A2E] mb-6 leading-tight">Butuh
+                        Konsultasi Zakat?</h2>
+                    <p class="text-lg text-gray-600 mb-10">
+                        Tim Lazismu Lengkong siap membantu Anda menghitung zakat, menjawab pertanyaan seputar program,
+                        atau menjemput donasi Anda.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div
+                            class="flex items-start gap-6 bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-primary/50 transition-colors">
+                            <div
+                                class="w-12 h-12 bg-orange-50 text-primary rounded-xl flex items-center justify-center text-xl shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <strong class="block text-[#1A1A2E] text-lg mb-1">Kantor Layanan</strong>
+                                <p class="text-gray-600">Jl. Buah Batu No. 59, Kec. Lengkong, Kota Bandung, Jawa Barat
+                                    40262</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-start gap-6 bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-primary/50 transition-colors">
+                            <div
+                                class="w-12 h-12 bg-green-50 text-green-600 rounded-xl flex items-center justify-center text-xl shrink-0">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <strong class="block text-[#1A1A2E] text-lg mb-1">WhatsApp Center</strong>
+                                <p class="text-gray-600">+62 812-3456-7890 (Layanan 24 Jam)</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-start gap-6 bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-primary/50 transition-colors">
+                            <div
+                                class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl shrink-0">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <strong class="block text-[#1A1A2E] text-lg mb-1">Jam Operasional</strong>
+                                <p class="text-gray-600">Senin - Jumat: 08.00 - 16.00 WIB</p>
+                                <p class="text-gray-600">Sabtu: 08.00 - 12.00 WIB</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-[500px] bg-gray-200 rounded-[24px] overflow-hidden shadow-2xl relative group"
+                    data-aos="fade-left">
+                    <!-- Placeholder for Map -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15843.07827668631!2d107.6180556!3d-6.927500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e62c12345678%3A0x1234567890abcdef!2sKecamatan%20Lengkong%2C%20Kota%20Bandung%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1625555555555!5m2!1sid!2sid"
+                        class="w-full h-full border-0 grayscale group-hover:grayscale-0 transition-all duration-700"
+                        allowfullscreen="" loading="lazy"></iframe>
+
+                    <div
+                        class="absolute bottom-6 left-6 right-6 p-4 bg-white/90 backdrop-blur-md rounded-xl shadow-lg border border-white/20">
+                        <div class="flex items-center gap-3">
+                            <img src="../assets/images/logo-lazismu.png" class="h-8"
+                                onerror="this.style.display='none'">
+                            <span class="text-sm font-bold text-[#1A1A2E]">Lokasi Lazismu Lengkong</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/6281234567890" target="_blank"
+        class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center text-3xl shadow-[0_4px_12px_rgba(37,211,102,0.4)] hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(37,211,102,0.6)] transition-all animate-bounce-slow"
+        aria-label="Chat WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <button id="backToTop"
+        class="fixed bottom-24 right-6 z-40 w-10 h-10 bg-white text-[#1A1A2E] border border-gray-200 rounded-full flex items-center justify-center text-lg shadow-lg opacity-0 invisible hover:bg-primary hover:text-white hover:border-primary transition-all duration-300"
+        aria-label="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="bg-[#1A1A2E] text-white pt-20 pb-10">
+        <div class="container mx-auto px-5 max-w-[1200px]">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div>
+                    <a href="#" class="flex items-center gap-3 mb-6">
+                        <img src="assets/images/lazismuasli.png" alt="Logo Lazismu"
+                            class="h-10 transition-all logo-img filter brightness-0 invert"
+                            onerror="this.style.display='none'">
+                        <div class="flex flex-col leading-none">
+                            <span class="text-xl font-extrabold text-[#F7941D]">LAZISMU</span>
+                            <span class="text-xs font-semibold text-gray-400 tracking-[0.15em]">LENGKONG</span>
+                        </div>
+                    </a>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Lembaga Amil Zakat Nasional tingkat Kantor Layanan (KL) di bawah naungan Muhammadiyah Lengkong.
+                        Menghimpun dan menyalurkan dana ZISKA secara profesional, transparan, dan amanah.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 hover:bg-[#F7941D] flex items-center justify-center transition-colors"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 hover:bg-[#F7941D] flex items-center justify-center transition-colors"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 hover:bg-[#F7941D] flex items-center justify-center transition-colors"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 hover:bg-[#F7941D] flex items-center justify-center transition-colors"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Tautan Cepat</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#beranda" class="text-gray-400 hover:text-[#F7941D] transition-colors">Beranda</a>
+                        </li>
+                        <li><a href="#program" class="text-gray-400 hover:text-[#F7941D] transition-colors">Program
+                                Kebaikan</a></li>
+                        <li><a href="#kalkulator"
+                                class="text-gray-400 hover:text-[#F7941D] transition-colors">Kalkulator Zakat</a></li>
+                        <li><a href="#tentang" class="text-gray-400 hover:text-[#F7941D] transition-colors">Laporan
+                                Transparansi</a></li>
+                        <li><a href="#kontak" class="text-gray-400 hover:text-[#F7941D] transition-colors">Hubungi
+                                Kami</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Kantor Layanan</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4">
+                            <i class="fas fa-map-marker-alt text-[#F7941D] mt-1"></i>
+                            <span class="text-gray-400">Jl. Buah Batu No. 59, Kec. Lengkong, Kota Bandung, Jawa Barat
+                                (Gedung Dakwah Muhammadiyah)</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fas fa-phone text-[#F7941D]"></i>
+                            <span class="text-gray-400">+62 812-3456-7890</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fas fa-envelope text-[#F7941D]"></i>
+                            <span class="text-gray-400">sapa@lazismulengkong.org</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Legalitas</h4>
+                    <div class="space-y-4">
+                        <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+                            <strong class="block text-[#F7941D] mb-1">SK Kemenag RI</strong>
+                            <span class="text-gray-400 text-sm">No. 730 Tahun 2016</span>
+                        </div>
+                        <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+                            <strong class="block text-[#F7941D] mb-1">NPWP</strong>
+                            <span class="text-gray-400 text-sm">01.234.567.8-901.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-white/10 pt-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">
+                    &copy; 2026 Lazismu Lengkong. All rights reserved.
+                </p>
+                <div class="flex gap-6 text-sm text-gray-500">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            once: true,
+            duration: 800,
+        });
+
+        // ============================================
+        // COUNT UP ANIMATION
+        // ============================================
+        function animateCountUp() {
+            const counters = document.querySelectorAll('.count-up');
+
+            counters.forEach(counter => {
+                const target = parseFloat(counter.getAttribute('data-target'));
+                const prefix = counter.getAttribute('data-prefix') || '';
+                const suffix = counter.getAttribute('data-suffix') || '';
+                const isDecimal = counter.getAttribute('data-decimal') === 'true';
+                const duration = 2000; // 2 seconds
+                const startTime = performance.now();
+
+                function easeOutQuart(t) {
+                    return 1 - Math.pow(1 - t, 4);
+                }
+
+                function updateCounter(currentTime) {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const easedProgress = easeOutQuart(progress);
+                    const currentValue = target * easedProgress;
+
+                    if (isDecimal) {
+                        counter.textContent = prefix + currentValue.toFixed(1) + suffix;
+                    } else {
+                        counter.textContent = prefix + Math.floor(currentValue).toLocaleString('id-ID') + suffix;
+                    }
+
+                    if (progress < 1) {
+                        requestAnimationFrame(updateCounter);
+                    }
+                }
+
+                requestAnimationFrame(updateCounter);
+            });
+        }
+
+        // Trigger count animation after page loads
+        window.addEventListener('load', () => {
+            setTimeout(animateCountUp, 500); // Slight delay for smoother effect
+        });
+
+        // Navbar Logic
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuBackdrop = document.getElementById('menuBackdrop');
+        const toggleBtn = document.getElementById('navbarToggle');
+        const closeMenu = document.getElementById('closeMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+        function openMenuHandler() {
+            mobileMenu.style.right = '0';
+            menuBackdrop.classList.remove('invisible', 'opacity-0');
+            menuBackdrop.classList.add('visible', 'opacity-100');
+            document.body.classList.add('overflow-hidden');
+        }
+
+        function closeMenuHandler() {
+            mobileMenu.style.right = '-100%';
+            menuBackdrop.classList.add('invisible', 'opacity-0');
+            menuBackdrop.classList.remove('visible', 'opacity-100');
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        toggleBtn.addEventListener('click', openMenuHandler);
+        closeMenu.addEventListener('click', closeMenuHandler);
+        menuBackdrop.addEventListener('click', closeMenuHandler);
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', closeMenuHandler);
+        });
+
+        // Donation Tabs Logic
+        const donationTabs = document.querySelectorAll('.donation-tab');
+        donationTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                donationTabs.forEach(t => {
+                    t.classList.remove('bg-primary', 'text-white', 'active');
+                    t.classList.add('text-gray-500');
+                });
+
+                // Add active class to clicked tab
+                tab.classList.remove('text-gray-500');
+                tab.classList.add('bg-primary', 'text-white', 'active');
+            });
+        });
+
+        // Donation Amount Buttons
+        const amountBtns = document.querySelectorAll('.amount-btn');
+        const amountInput = document.getElementById('donationAmount');
+
+        amountBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const amount = btn.getAttribute('data-amount');
+
+                // Reset all buttons style
+                amountBtns.forEach(b => {
+                    b.classList.remove('border-primary', 'bg-orange-50', 'text-primary');
+                    b.classList.add('border-gray-200', 'text-gray-600');
+                });
+
+                // Active style
+                btn.classList.remove('border-gray-200', 'text-gray-600');
+                btn.classList.add('border-primary', 'bg-orange-50', 'text-primary');
+
+                if (amount !== 'custom') {
+                    amountInput.value = amount;
+                } else {
+                    amountInput.value = '';
+                    amountInput.focus();
+                }
+            });
+        });
+
+        // Payment Method Toggling
+        const paymentRadios = document.querySelectorAll('input[name="payment_method"]');
+        const paymentDetails = document.querySelectorAll('.payment-detail');
+
+        paymentRadios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                const selectedMethod = radio.value;
+
+                // Hide all details
+                paymentDetails.forEach(detail => {
+                    detail.classList.add('hidden');
+                    detail.classList.remove('block');
+                });
+
+                // Show selected detail
+                const selectedDetail = document.getElementById(`payment-${selectedMethod}`);
+                if (selectedDetail) {
+                    selectedDetail.classList.remove('hidden');
+                    selectedDetail.classList.add('block');
+                }
+            });
+        });
+
+        // ============================================
+        // Zakat Calculator Logic
+        // ============================================
+        let currentStep = 1;
+
+        window.nextStep = function (step) {
+            if (!validateStep(step)) return;
+
+            const currentStepEl = document.querySelector(`.calc-step[data-step="${step}"]`);
+            const nextStepEl = document.querySelector(`.calc-step[data-step="${step + 1}"]`);
+
+            currentStepEl.classList.add('hidden');
+            currentStepEl.classList.remove('active');
+
+            nextStepEl.classList.remove('hidden');
+            nextStepEl.classList.add('active');
+
+            currentStep = step + 1;
+            updateCalculatorProgress();
+        };
+
+        window.prevStep = function (step) {
+            const currentStepEl = document.querySelector(`.calc-step[data-step="${step}"]`);
+            const prevStepEl = document.querySelector(`.calc-step[data-step="${step - 1}"]`);
+
+            currentStepEl.classList.add('hidden');
+            currentStepEl.classList.remove('active');
+
+            prevStepEl.classList.remove('hidden');
+            prevStepEl.classList.add('active');
+
+            currentStep = step - 1;
+            updateCalculatorProgress();
+        };
+
+        function updateCalculatorProgress() {
+            const progressFill = document.getElementById('progressFill');
+            const indicators = document.querySelectorAll('.step-indicator');
+
+            const percentage = (currentStep / 4) * 100;
+            progressFill.style.width = `${percentage}%`;
+
+            indicators.forEach((ind, idx) => {
+                const stepNum = idx + 1;
+                if (stepNum < currentStep) {
+                    ind.classList.add('bg-primary', 'text-white', 'border-primary');
+                    ind.classList.remove('text-gray-400', 'border-gray-200');
+                } else if (stepNum === currentStep) {
+                    ind.classList.add('text-primary', 'border-primary', 'active');
+                    ind.classList.remove('bg-primary', 'text-white', 'text-gray-400', 'border-gray-200');
+                } else {
+                    ind.classList.remove('bg-primary', 'text-white', 'border-primary', 'active');
+                    ind.classList.add('text-gray-400', 'border-gray-200');
+                }
+            });
+        }
+
+        function validateStep(step) {
+            if (step === 1) {
+                const checked = !!document.querySelector('input[name="focus"]:checked');
+                if (!checked) alert('Silakan pilih salah satu fokus bantuan');
+                return checked;
+            }
+            if (step === 2) {
+                const val = document.getElementById('assetAmount').value;
+                if (!val || val === '0') {
+                    alert('Silakan masukkan nilai aset Anda');
+                    return false;
+                }
+                return true;
+            }
+            if (step === 3) {
+                const checked = !!document.querySelector('input[name="style"]:checked');
+                if (!checked) alert('Silakan pilih gaya berbagi Anda');
+                return checked;
+            }
+            return true;
+        }
+
+        const calcForm = document.getElementById('zakatCalculator');
+        calcForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('donorName').value;
+            const sa = document.getElementById('assetAmount').value.replace(/\D/g, '');
+            const asset = parseInt(sa) || 0;
+            const style = document.querySelector('input[name="style"]:checked').value;
+            const focus = document.querySelector('input[name="focus"]:checked').value;
+
+            let zakatVal = (style === 'zakat') ? asset * 0.025 : asset * 0.01;
+
+            // Impact Calculation
+            const meals = Math.floor(zakatVal / 250000);
+            const orphans = Math.floor(zakatVal / 500000);
+            const students = Math.floor(zakatVal / 400000);
+
+            // Populate Results
+            document.getElementById('resultName').textContent = name;
+            document.getElementById('resultZakat').textContent = 'Rp ' + zakatVal.toLocaleString('id-ID');
+            document.getElementById('resultMeals').textContent = meals;
+            document.getElementById('resultOrphans').textContent = Math.max(1, orphans);
+            document.getElementById('resultStudents').textContent = Math.max(1, students);
+
+            let category = 'Friend of the Needy';
+            if (zakatVal >= 10000000) category = 'Sultan of Generosity';
+            else if (zakatVal >= 5000000) category = 'Champion of Lengkong';
+            else if (zakatVal >= 1000000) category = 'Guardian of Education';
+            document.getElementById('resultCategory').textContent = category;
+
+            calcForm.classList.add('hidden');
+            document.getElementById('calcResult').classList.remove('hidden');
+            document.getElementById('kalkulator').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        window.copyAccount = function (accountNumber) {
+            navigator.clipboard.writeText(accountNumber).then(() => {
+                alert('Nomor rekening berhasil disalin!');
+            }).catch(() => {
+                const textArea = document.createElement('textarea');
+                textArea.value = accountNumber;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                alert('Nomor rekening berhasil disalin!');
+            });
+        };
+
+        window.resetCalculator = function () {
+            currentStep = 1;
+            calcForm.reset();
+            calcForm.classList.remove('hidden');
+            document.getElementById('calcResult').classList.add('hidden');
+            document.querySelectorAll('.calc-step').forEach(s => s.classList.add('hidden'));
+            document.querySelector('.calc-step[data-step="1"]').classList.remove('hidden');
+            updateCalculatorProgress();
+        };
+
+        window.scrollToDonation = function () {
+            document.getElementById('donasi').scrollIntoView({ behavior: 'smooth' });
+        };
+
+        const assetInput = document.getElementById('assetAmount');
+        if (assetInput) {
+            assetInput.addEventListener('input', function () {
+                let value = this.value.replace(/\D/g, '');
+                this.value = value ? parseInt(value).toLocaleString('id-ID') : '';
+            });
+        }
+
+        // Back to Top Logic
+        const bttBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                bttBtn.classList.remove('opacity-0', 'invisible');
+                bttBtn.classList.add('opacity-100', 'visible');
+            } else {
+                bttBtn.classList.add('opacity-0', 'invisible');
+                bttBtn.classList.remove('opacity-100', 'visible');
+            }
+        });
+
+        bttBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 0,
+            effect: "fade",
+            loop: true,
+            speed: 1000,
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
