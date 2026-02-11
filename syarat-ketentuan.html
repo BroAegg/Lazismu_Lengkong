@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syarat & Ketentuan - Lazismu Lengkong</title>
+    <meta name="description" content="Syarat dan Ketentuan penggunaan layanan Lazismu Lengkong.">
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Amiri:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { DEFAULT: '#F7941D', light: '#FFB347', dark: '#E67E22' },
+                        secondary: { DEFAULT: '#00A651', light: '#2ECC71', dark: '#27AE60' },
+                        dark: { DEFAULT: '#1A1A2E', light: '#2D2D44' },
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        arabic: ['Amiri', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        #navbar.scrolled {
+            background: white !important;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            padding-top: 0.75rem !important;
+            padding-bottom: 0.75rem !important;
+        }
+
+        #navbar.scrolled .logo-img {
+            filter: none !important;
+        }
+
+        #navbar.scrolled .logo-text-sub {
+            color: #6B7280 !important;
+        }
+
+        #navbar.scrolled .nav-link {
+            color: #1A1A2E !important;
+        }
+
+        #navbar.scrolled .toggle-bar {
+            background: #1A1A2E !important;
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-800 bg-gray-50 antialiased">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4" id="navbar">
+        <div class="container mx-auto px-5 flex items-center justify-between max-w-[1200px]">
+            <a href="index.html" class="flex flex-col items-center gap-1 group relative">
+                <img src="assets/images/lazismuasli.png" alt="Lazismu Logo"
+                    class="h-10 w-auto transition-all duration-300 logo-img filter brightness-0 invert">
+                <span
+                    class="text-[0.625rem] font-normal tracking-wide text-white/70 logo-text-sub transition-colors duration-300"
+                    style="font-family: 'Lato', sans-serif;">lengkong</span>
+            </a>
+            <button class="lg:hidden flex flex-col gap-[5px] p-2" id="navbarToggle">
+                <span class="w-[25px] h-[3px] bg-white rounded-sm transition-all toggle-bar"></span>
+                <span class="w-[25px] h-[3px] bg-white rounded-sm transition-all toggle-bar"></span>
+                <span class="w-[25px] h-[3px] bg-white rounded-sm transition-all toggle-bar"></span>
+            </button>
+            <ul class="hidden lg:flex items-center gap-8">
+                <li><a href="index.html#beranda"
+                        class="text-[0.9375rem] font-medium text-white/90 hover:text-white nav-link">Beranda</a></li>
+                <li><a href="index.html#program"
+                        class="text-[0.9375rem] font-medium text-white/90 hover:text-white nav-link">Program</a></li>
+                <li><a href="kalkulator.html"
+                        class="text-[0.9375rem] font-medium text-white/90 hover:text-white nav-link">Kalkulator</a></li>
+                <li><a href="login.html"
+                        class="px-5 py-2.5 text-white/90 hover:text-white font-medium nav-link">Masuk</a></li>
+                <li><a href="donasi.html"
+                        class="bg-gradient-to-r from-[#F7941D] to-[#F15A24] px-6 py-2.5 text-white font-semibold rounded-lg shadow-lg hover:shadow-orange-glow transition-all">Donasi
+                        Sekarang</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-[#1A1A2E] pt-36 pb-24 text-white relative overflow-hidden">
+        <div
+            class="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl -mr-32 -mt-32 pointer-events-none">
+        </div>
+        <div class="container mx-auto px-5 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Syarat & Ketentuan</h1>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto">Ketentuan penggunaan platform digital Lazismu Lengkong.
+            </p>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <main class="container mx-auto px-5 relative z-20 mb-20 -mt-16">
+        <div
+            class="bg-white rounded-2xl shadow-xl p-8 md:p-12 max-w-4xl mx-auto prose prose-lg prose-orange text-gray-600">
+            <h3>1. Ketentuan Umum</h3>
+            <p>Dengan mengakses atau menggunakan situs web Lazismu Lengkong, Anda setuju untuk terikat oleh Syarat dan
+                Ketentuan ini. Jika Anda tidak setuju dengan bagian mana pun dari ketentuan ini, Anda tidak
+                diperkenankan menggunakan layanan kami.</p>
+
+            <h3>2. Layanan Donasi</h3>
+            <p>Lazismu Lengkong menyediakan platform untuk memudahkan penyaluran Zakat, Infaq, Shadaqah, dan Wakaf
+                (ZISWAF). Kami menjamin bahwa setiap dana yang masuk akan dikelola dan disalurkan sesuai dengan syariat
+                Islam dan peraturan perundang-undangan yang berlaku di Indonesia.</p>
+
+            <h3>3. Akun Pengguna</h3>
+            <p>Untuk fitur tertentu, Anda mungkin perlu mendaftar akun. Anda bertanggung jawab untuk menjaga kerahasiaan
+                informasi akun dan password Anda. Lazismu Lengkong tidak bertanggung jawab atas kerugian yang timbul
+                akibat penyalahgunaan akun Anda oleh pihak lain.</p>
+
+            <h3>4. Kebijakan Pengembalian Dana (Refund)</h3>
+            <p>Secara umum, donasi yang telah disalurkan bersifat final dan tidak dapat dikembalikan (non-refundable),
+                karena akad donasi (hibah/sedekah) telah terjadi seketika saat transaksi berhasil. Namun, jika terjadi
+                kesalahan teknis (misal: double transfer), harap hubungi layanan pelanggan kami dalam waktu 2x24 jam.
+            </p>
+
+            <h3>5. Perubahan Ketentuan</h3>
+            <p>Lazismu Lengkong berhak untuk mengubah syarat dan ketentuan ini sewaktu-waktu. Perubahan akan berlaku
+                efektif segera setelah diposting di halaman ini.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1A1A2E] text-white pt-16 pb-8">
+        <div class="container mx-auto px-5 text-center">
+            <p class="text-gray-500 text-sm">&copy; 2026 Lazismu Lengkong. Melayani dengan Amanah.</p>
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) navbar.classList.add('scrolled');
+            else navbar.classList.remove('scrolled');
+        });
+    </script>
+</body>
+
+</html>

@@ -111,7 +111,7 @@
     </div>
 
     <!-- Right Side - Login Form -->
-    <div class="w-full lg:w-1/2 h-full bg-white flex flex-col justify-center items-center p-8 relative overflow-y-auto">
+    <div class="w-full lg:w-1/2 h-full bg-white relative overflow-y-auto custom-scrollbar">
         <!-- Decoration -->
         <div
             class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-32 -mt-32 pointer-events-none">
@@ -120,99 +120,95 @@
             class="absolute bottom-0 left-0 w-64 h-64 bg-secondary/5 rounded-full blur-3xl -ml-32 -mb-32 pointer-events-none">
         </div>
 
-        <div class="w-full max-w-md animate-fade-in relative z-10">
-            <!-- Header for Mobile -->
-            <div class="text-center mb-10">
-                <a href="index.html" class="inline-block mb-6 hover:opacity-80 transition-opacity">
-                    <div class="flex flex-col items-center">
-                        <img src="assets/images/lazismuasli.png" alt="Lazismu Logo"
-                            class="h-10 filter invert brightness-0 mb-1">
-                        <span class="text-[0.6rem] font-bold tracking-widest text-gray-500 uppercase">Lengkong</span>
-                    </div>
-                </a>
-                <h3 class="text-2xl font-bold text-gray-900 mb-2">Masuk ke Akun</h3>
-                <p class="text-gray-500">Lanjutkan perjalanan kebaikan Anda hari ini.</p>
-            </div>
+        <div class="min-h-full flex flex-col justify-center items-center p-8 md:p-12 relative z-10 w-full">
+            <div class="w-full max-w-md space-y-6 animate-fade-in">
+                <!-- Header (Title Only) -->
+                <div class="mb-4">
+                    <h3 class="text-2xl font-bold text-gray-900 leading-tight">Masuk untuk mulai tolong-menolong sesama
+                    </h3>
+                </div>
 
-            <!-- Social Login -->
-            <button
-                class="w-full flex items-center justify-center gap-3 bg-white border border-gray-200 hover:bg-gray-50 hover:border-gray-300 text-gray-700 font-medium py-3 px-4 rounded-xl transition-all duration-300 mb-6 group shadow-sm">
-                <img src="https://www.svgrepo.com/show/475656/google-color.svg"
-                    class="w-5 h-5 group-hover:scale-110 transition-transform" alt="Google">
-                <span>Masuk dengan Google</span>
-            </button>
-
-            <div class="relative flex py-2 items-center mb-6">
-                <div class="flex-grow border-t border-gray-200"></div>
-                <span
-                    class="flex-shrink-0 mx-4 text-gray-400 text-xs uppercase tracking-widest font-semibold">Atau</span>
-                <div class="flex-grow border-t border-gray-200"></div>
-            </div>
-
-            <!-- Form -->
-            <form action="index.html" class="space-y-5">
-                <div>
-                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1 ml-1">Email / No.
-                        Handphone</label>
-                    <div class="relative group">
-                        <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                            <i
-                                class="fas fa-envelope text-gray-400 group-focus-within:text-primary transition-colors"></i>
+                <!-- Form -->
+                <form action="index.html" class="space-y-5">
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1 ml-1">Email / No.
+                            Handphone</label>
+                        <div class="relative group">
+                            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                <i
+                                    class="fas fa-envelope text-gray-400 group-focus-within:text-primary transition-colors"></i>
+                            </div>
+                            <input type="text" id="email" required
+                                class="pl-11 w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all placeholder-gray-400 text-gray-800"
+                                placeholder="Email atau Nomor HP">
                         </div>
-                        <input type="text" id="email" required
-                            class="pl-11 w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all placeholder-gray-400 text-gray-800"
-                            placeholder="nama@email.com">
                     </div>
-                </div>
 
-                <div>
-                    <div class="flex justify-between items-center mb-1 ml-1">
-                        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-                        <a href="#"
-                            class="text-xs font-semibold text-primary hover:text-orange-600 transition-colors">Lupa
-                            Password?</a>
-                    </div>
-                    <div class="relative group">
-                        <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                            <i class="fas fa-lock text-gray-400 group-focus-within:text-primary transition-colors"></i>
+                    <div>
+                        <div class="flex justify-between items-center mb-1 ml-1">
+                            <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                            <a href="#"
+                                class="text-xs font-semibold text-primary hover:text-orange-600 transition-colors">Lupa
+                                Password?</a>
                         </div>
-                        <input type="password" id="password" required
-                            class="pl-11 w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all placeholder-gray-400 text-gray-800"
-                            placeholder="••••••••">
-                        <button type="button" onclick="togglePassword()"
-                            class="absolute inset-y-0 right-0 pr-4 flex items-center text-gray-400 hover:text-gray-600 transition-colors cursor-pointer">
-                            <i class="fas fa-eye" id="toggleIcon"></i>
-                        </button>
+                        <div class="relative group">
+                            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                <i
+                                    class="fas fa-lock text-gray-400 group-focus-within:text-primary transition-colors"></i>
+                            </div>
+                            <input type="password" id="password" required
+                                class="pl-11 w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all placeholder-gray-400 text-gray-800"
+                                placeholder="••••••••">
+                            <button type="button" onclick="togglePassword()"
+                                class="absolute inset-y-0 right-0 pr-4 flex items-center text-gray-400 hover:text-gray-600 transition-colors cursor-pointer">
+                                <i class="fas fa-eye" id="toggleIcon"></i>
+                            </button>
+                        </div>
                     </div>
+
+                    <!-- Remember Me -->
+                    <div class="flex items-center ml-1">
+                        <input id="remember-me" type="checkbox"
+                            class="h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded cursor-pointer">
+                        <label for="remember-me"
+                            class="ml-2 block text-sm text-gray-500 cursor-pointer select-none">Ingat saya</label>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-gradient-to-r from-[#F7941D] to-[#F15A24] text-white font-bold py-3.5 rounded-xl shadow-lg shadow-orange-200 hover:shadow-orange-glow hover:-translate-y-1 active:translate-y-0 transition-all duration-300 flex items-center justify-center gap-2 group">
+                        <span>Masuk</span>
+                        <i class="fas fa-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
+                    </button>
+                </form>
+
+                <!-- Footer Link -->
+                <p class="text-center text-gray-600 text-sm">
+                    Belum punya akun?
+                    <a href="register.html"
+                        class="font-bold text-primary hover:text-orange-600 transition-colors hover:underline decoration-2 underline-offset-2">Daftar</a>
+                </p>
+
+                <!-- Divider -->
+                <div class="relative flex py-2 items-center">
+                    <div class="flex-grow border-t border-gray-200"></div>
+                    <span class="flex-shrink-0 mx-4 text-gray-400 text-xs text-gray-500 font-medium">Atau lebih
+                        cepat</span>
+                    <div class="flex-grow border-t border-gray-200"></div>
                 </div>
 
-                <!-- Remember Me -->
-                <div class="flex items-center ml-1">
-                    <input id="remember-me" type="checkbox"
-                        class="h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded cursor-pointer">
-                    <label for="remember-me" class="ml-2 block text-sm text-gray-500 cursor-pointer select-none">Ingat
-                        saya</label>
-                </div>
-
-                <button type="submit"
-                    class="w-full bg-gradient-to-r from-[#F7941D] to-[#F15A24] text-white font-bold py-3.5 rounded-xl shadow-lg shadow-orange-200 hover:shadow-orange-glow hover:-translate-y-1 active:translate-y-0 transition-all duration-300 flex items-center justify-center gap-2 group">
-                    <span>Masuk Sekarang</span>
-                    <i class="fas fa-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
+                <!-- Social Login -->
+                <button
+                    class="w-full flex items-center justify-center gap-3 bg-white border border-gray-200 hover:bg-gray-50 hover:border-gray-300 text-gray-700 font-medium py-3 px-4 rounded-xl transition-all duration-300 group shadow-sm">
+                    <img src="https://www.svgrepo.com/show/475656/google-color.svg"
+                        class="w-5 h-5 group-hover:scale-110 transition-transform" alt="Google">
+                    <span>Masuk dengan Google</span>
                 </button>
-            </form>
 
-            <!-- Footer Link -->
-            <p class="mt-8 text-center text-gray-600 text-sm">
-                Belum punya akun?
-                <a href="register.html"
-                    class="font-bold text-primary hover:text-orange-600 transition-colors hover:underline decoration-2 underline-offset-2">Daftar
-                    Sekarang</a>
-            </p>
-
-            <div class="mt-12 pt-6 border-t border-gray-100 flex justify-center gap-6 text-xs text-gray-400">
-                <a href="#" class="hover:text-gray-600 transition-colors">Kebijakan Privasi</a>
-                <a href="#" class="hover:text-gray-600 transition-colors">Syarat & Ketentuan</a>
-                <a href="#" class="hover:text-gray-600 transition-colors">Bantuan</a>
+                <div class="pt-6 border-t border-gray-100 flex justify-center gap-6 text-xs text-gray-400">
+                    <a href="kebijakan-privasi.html" class="hover:text-gray-600 transition-colors">Kebijakan Privasi</a>
+                    <a href="syarat-ketentuan.html" class="hover:text-gray-600 transition-colors">Syarat & Ketentuan</a>
+                    <a href="bantuan.html" class="hover:text-gray-600 transition-colors">Bantuan</a>
+                </div>
             </div>
         </div>
     </div>

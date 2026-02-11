@@ -369,7 +369,7 @@
     </style>
 </head>
 
-<body class="font-sans text-gray-800 bg-white overflow-x-hidden antialiased">
+<body class="font-sans text-gray-800 bg-white overflow-x-hidden antialiased pb-20 lg:pb-0">
 
     <!-- Navbar -->
     <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 bg-transparent backdrop-blur-sm"
@@ -388,7 +388,9 @@
                 </span>
             </a>
 
-            <button class="lg:hidden flex flex-col gap-[5px] p-2" id="navbarToggle" aria-label="Toggle navigation">
+            <!-- Hamburger Menu Hidden (Replaced by Bottom Nav) -->
+            <button class="hidden flex flex-col gap-[5px] p-2" id="navbarToggleHidden" aria-label="Toggle navigation"
+                style="display: none;">
                 <span class="w-[25px] h-[3px] bg-white rounded-sm transition-all toggle-bar"></span>
                 <span class="w-[25px] h-[3px] bg-white rounded-sm transition-all toggle-bar"></span>
                 <span class="w-[25px] h-[3px] bg-white rounded-sm transition-all toggle-bar"></span>
@@ -1335,9 +1337,11 @@
         // Mobile Menu Toggle
         const mobileMenu = document.getElementById('mobileMenu');
         const menuBackdrop = document.getElementById('menuBackdrop');
-        const toggleBtn = document.getElementById('navbarToggle');
         const closeMenu = document.getElementById('closeMenu');
         const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+        // New Trigger (Bottom Nav)
+        const mobileMenuTrigger = document.getElementById('mobileMenuTrigger');
 
         function openMenuHandler() {
             mobileMenu.style.right = '0';
@@ -1353,14 +1357,22 @@
             document.body.classList.remove('overflow-hidden');
         }
 
-        toggleBtn.addEventListener('click', openMenuHandler);
-        closeMenu.addEventListener('click', closeMenuHandler);
-        menuBackdrop.addEventListener('click', closeMenuHandler);
+        if (mobileMenuTrigger) {
+            mobileMenuTrigger.addEventListener('click', openMenuHandler);
+        }
+
+        // Handle old Toggle if it still exists (or hidden one)
+        const oldToggle = document.getElementById('navbarToggleHidden');
+        if (oldToggle) {
+            oldToggle.addEventListener('click', openMenuHandler);
+        }
+
+        if (closeMenu) closeMenu.addEventListener('click', closeMenuHandler);
+        if (menuBackdrop) menuBackdrop.addEventListener('click', closeMenuHandler);
 
         mobileLinks.forEach(link => {
             link.addEventListener('click', closeMenuHandler);
         });
-
 
 
         // Back to Top Logic
@@ -1380,6 +1392,46 @@
         });
 
     </script>
+    <!-- Bottom Navigation Bar (Mobile Only) -->
+    <div
+        class="fixed bottom-0 left-0 right-0 bg-white shadow-[0_-4px_20px_rgba(0,0,0,0.05)] z-[60] px-6 py-3 lg:hidden flex justify-between items-center border-t border-gray-100 pb-safe">
+        <a href="index.html" class="flex flex-col items-center gap-1 text-primary group">
+            <i class="fas fa-home text-xl mb-0.5 group-hover:scale-110 transition-transform"></i>
+            <span class="text-[0.65rem] font-medium">Beranda</span>
+        </a>
+        <a href="program.html"
+            class="flex flex-col items-center gap-1 text-gray-400 group hover:text-primary transition-colors">
+            <i class="fas fa-hand-holding-heart text-xl mb-0.5 group-hover:scale-110 transition-transform"></i>
+            <span class="text-[0.65rem] font-medium">Program</span>
+        </a>
+
+        <!-- Center Donasi Button -->
+        <div class="relative -top-8">
+            <a href="donasi.html"
+                class="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-[#F7941D] to-[#F15A24] text-white shadow-lg shadow-orange-200 hover:shadow-orange-glow transform hover:-translate-y-1 transition-all duration-300 ring-4 ring-white border border-orange-100">
+                <i class="fas fa-heart text-2xl animate-pulse-slow"></i>
+            </a>
+            <span class="absolute -bottom-6 w-full text-center text-[0.65rem] font-bold text-gray-800">Donasi</span>
+        </div>
+
+        <a href="kalkulator.html"
+            class="flex flex-col items-center gap-1 text-gray-400 group hover:text-primary transition-colors">
+            <i class="fas fa-calculator text-xl mb-0.5 group-hover:scale-110 transition-transform"></i>
+            <span class="text-[0.65rem] font-medium">Hitung</span>
+        </a>
+        <button id="mobileMenuTrigger"
+            class="flex flex-col items-center gap-1 text-gray-400 group hover:text-primary transition-colors">
+            <i class="fas fa-bars text-xl mb-0.5 group-hover:scale-110 transition-transform"></i>
+            <span class="text-[0.65rem] font-medium">Menu</span>
+        </button>
+    </div>
+
+    <style>
+        .pb-safe {
+            padding-bottom: env(safe-area-inset-bottom, 1rem);
+        }
+    </style>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -1400,6 +1452,8 @@
                 prevEl: ".swiper-button-prev",
             },
         });
+
+
     </script>
 </body>
 
